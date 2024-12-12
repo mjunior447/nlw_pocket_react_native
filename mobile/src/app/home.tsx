@@ -4,6 +4,7 @@ import { Places } from "@/components/places";
 import { api } from "@/services/api";
 import { colors } from "@/styles/colors";
 import { fontFamily } from "@/styles/font-family";
+import { router } from "expo-router";
 import { useEffect, useState } from "react";
 import { Alert, Text, View } from "react-native";
 import MapView, { Callout, Marker } from "react-native-maps";
@@ -54,7 +55,6 @@ export default function Home() {
 
   useEffect(() => {
     fetchMarkets();
-    console.log(markets);
   }, [category]);
 
   return (
@@ -94,6 +94,7 @@ export default function Home() {
             image={require("@/assets/pin.png")}
             title={item.name}
             description={item.address}
+            onCalloutPress={() => router.navigate(`/market/${item.id}`)}
           >
             {/* <Callout>
               <View>
