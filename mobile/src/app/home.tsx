@@ -95,30 +95,7 @@ export default function Home() {
             title={item.name}
             description={item.address}
             onCalloutPress={() => router.navigate(`/market/${item.id}`)}
-          >
-            {/* <Callout>
-              <View>
-                <Text
-                  style={{
-                    fontSize: 14,
-                    color: colors.gray[600],
-                    fontFamily: fontFamily.medium,
-                  }}
-                >
-                  {item.name}
-                </Text>
-                <Text
-                  style={{
-                    fontSize: 12,
-                    color: colors.gray[600],
-                    fontFamily: fontFamily.regular,
-                  }}
-                >
-                  {item.address}
-                </Text>
-              </View>
-            </Callout> */}
-          </Marker>
+          />
         ))}
       </MapView>
 
