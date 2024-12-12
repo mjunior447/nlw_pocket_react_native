@@ -1,5 +1,9 @@
 # Nearby app!
 
+Find a great place have a meal Nearby. Use your phone's map to find stores in your area, redeem coupons with your camera for discount.
+
+*Project made for learning purposes only*.
+
 ## Project made with React Native for Rocketseat's Next Level Week Pocket
 
 ### Core technologies used in the Frontend:
